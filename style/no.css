@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.container {
+  margin-top: 10px;
+}
+.button-yes, .button-no {
+  margin: 10px;
+}
+.button-yes a, .button-no a {
+  text-decoration: none;
+  color: white;
+}
+.button-yes, .button-no {
+  background-color: #444;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.button-yes:hover, .button-no:hover {
+  background-color: #666;
+}

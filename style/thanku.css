@@ -1,0 +1,77 @@
+body, html {
+  background-image: url('/images/pink-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+.container1 .overlay {
+  background-image: url('/images/pic5.jpg');
+}
+
+.container2 .overlay {
+  background-image: url('/images/pic6.jpg');
+}
+
+.container3 .overlay {
+  background-image: url('/images/pic7.jpg');
+}
+
+.container4 .overlay {
+  background-image: url('/images/pic8.jpg');
+}
+
+.container:hover .overlay {
+  opacity: 0.3;
+}
+
+.message {
+  z-index: 2;
+  position: relative;
+  padding: 10px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+.message p {
+  display: none;
+}
+
+.container:hover .message p {
+  display: block;
+}

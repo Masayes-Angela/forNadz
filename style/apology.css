@@ -1,0 +1,90 @@
+body, html {
+  background-image: url('/images/wallpaper-apology.webp');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+.container1 .overlay {
+  background-image: url('/images/pic1.jpg');
+}
+
+.container2 .overlay {
+  background-image: url('/images/pic2.jpg');
+}
+
+.container3 .overlay {
+  background-image: url('/images/pic3.jpg');
+}
+
+.container4 .overlay {
+  background-image: url('/images/pic4.jpg');
+}
+
+.container:hover .overlay {
+  opacity: 0.3;
+}
+
+.message {
+  z-index: 2;
+  position: relative;
+  padding: 10px;
+}
+
+p {
+  color: black;
+}
+
+.message p {
+  display: none;
+}
+
+.container:hover .message p {
+  display: block;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
